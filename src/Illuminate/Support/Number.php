@@ -144,11 +144,11 @@ class Number
     public static function forHumans(int|float $number, int $precision = 0, ?int $maxPrecision = null)
     {
         $units = [
-            3 => 'thousand',
-            6 => 'million',
-            9 => 'billion',
-            12 => 'trillion',
-            15 => 'quadrillion',
+            3 => __('thousand'),
+            6 => __('million'),
+            9 => __('billion'),
+            12 => __('trillion'),
+            15 => __('quadrillion'),
         ];
 
         switch (true) {
